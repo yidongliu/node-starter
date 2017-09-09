@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="home.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="video-background">
+    <div class="video-foreground">
+    <iframe src="video.mp4" frameborder="0">
+    	
+    </iframe>
+
+
+    </div>
+  </div>
+
+<div id="vidtop-content">
+<div class="vid-info">
+	  <h1>Welcome to LINYA'S</h1>
+	  <p>The dance starts with the line, the curve, all those simple pieces with infinite potential. They shape and form the way we experience the created world. I am a designer, a thirsty and curious celebrant of matters, moments and emotions.
+     <!-- <p>With combined experience of interaction design, user experience, and industrial design, I am chasing questioning work, the work about more than just creating beautiful things, but creating things that matter.  -->
+	 <a href="https://www.linya-huang.com" id="coffee"></a>
+  </div>
+  <script type="text/javascript">
+  	var str = "CHECK . OUT.  MY. WORK";
+
+	var spans = '<span>' + str.split("").join(' </span><span>') + '</span>';
+
+	$(spans).hide().appendTo('#coffee').each(function(i) {
+	   	 $(this).delay(100 * i).fadeIn();
+	});
+  </script>
+</div>
+
+</body>
+
+</html>
