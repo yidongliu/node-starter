@@ -1,58 +1,64 @@
+html, body {
+  overflow: hidden;
+  margin: 0;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+  color: #333;
 }
-
-a {
-  color: #00B7FF;
+#wrapper {
+  position: absolute;
+  left: 0;
+  width: 320px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -160px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
-
-* { box-sizing: border-box; }
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
+h1 {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  margin: 12px 0;
+  left: 4px;
 }
-.video-foreground,
-.video-background iframe {
+h2 {
+  color: #999;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: .12em;
+  margin-bottom: 30px;
+  left: 3px;
+}
+h1, h2 {
+  position: relative;
+}
+p {
+  font-size: 14px;
+  line-height: 2em;
+  margin: 0;
+  letter-spacing: 2px;
+}
+canvas {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
-#vidtop-content {
-    top: 0;
-    color: #fff;
+a {
+  color: #999;
+  text-decoration: none;
+  transition: color .2s ease;
 }
-
-#coffee {
-  text-align: left;
-  padding-left: 20px;
-}
-.vid-info { position: absolute; 
-  top: 20%; 
-  left: 30; 
-  width: 400px; 
-  background: rgba(0,0,0,0.3); 
-  color: #fff; 
-  padding: 1rem; 
-  font-family: Avenir, Helvetica, sans-serif; }
-
-.vid-info h1 { font-size: 2rem; font-weight: 600; margin-top: 60; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
+a:hover {
+  color: #f33;
 }
