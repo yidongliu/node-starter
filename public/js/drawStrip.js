@@ -51,4 +51,7 @@ function y(p) {
 
 document.onclick = i;
 document.ontouchstart = i;
-i();
+
+setInterval(() => {
+  i();
+}, 2000);

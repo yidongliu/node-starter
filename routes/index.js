@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Node.js Project - Linya' });
 });
 
+router.get('/video', function(req, res, next) {
+    res.render('video', { title: 'Node.js Project - Linya' });
+});
+
 module.exports = router;
