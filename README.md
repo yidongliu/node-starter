@@ -1,9 +1,6 @@
-# node-starter
-A simple node.js back-end starter
-## Set up ##
+# Set up
+Make sure you have `node` and `npm` installed
 ```
-git clone https://github.com/yidongliu/node-starter.git`
-cd node-starter
 npm install
 ```
 
@@ -12,6 +9,10 @@ npm install
 npm start
 ````
 Go to `localhost:3000`
+
+## Online version (hosted on AWS)
+
+http://sofianodejs-env.qsnp5md5zx.us-west-2.elasticbeanstalk.com/
 
 
 
